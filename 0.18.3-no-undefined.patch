@@ -1,0 +1,11 @@
+--- origsrc/libnxml-0.18.3/src/Makefile.am	2007-06-13 07:19:57.000000000 -0500
++++ src/libnxml-0.18.3/src/Makefile.am	2009-07-15 00:27:19.377751600 -0500
+@@ -14,7 +14,7 @@ libnxml_la_SOURCES = \
+ 	nxml_tools.c \
+ 	nxml_namespace.c
+ 
+-libnxml_la_LDFLAGS = -version-info @LIBNXML_VERSION_INFO@
++libnxml_la_LDFLAGS = -version-info @LIBNXML_VERSION_INFO@ -no-undefined
+ 
+ EXTRA_DIST = nxml.h.in nxml.h nxml_internal.h
+ 
