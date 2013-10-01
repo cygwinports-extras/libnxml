@@ -1,8 +1,0 @@
-DESCRIPTION="Unicode XML 1.0/1.1 library"
-HOMEPAGE="http://www.autistici.org/bakunin/codes.php"
-SRC_URI="http://www.autistici.org/bakunin/${PN}/${P}.tar.gz"
-PATCH_URI="0.18.3-no-undefined.patch"
-
-PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
-libnxml0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
-libnxml_devel_CONTENTS="usr/include/ usr/lib/"

@@ -1,0 +1,15 @@
+NAME="libnxml"
+VERSION=0.18.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Unicode XML 1.0/1.1 library"
+DESCRIPTION="nXML is a C library for parsing, writing and creating XML 1.0
+and 1.1 files or streams. It supports utf-8, utf-16be and utf-16le, ucs-4
+(1234, 4321, 2143, 2312)."
+HOMEPAGE="http://www.autistici.org/bakunin/codes.php"
+SRC_URI="http://www.autistici.org/bakunin/libnxml/libnxml-${VERSION}.tar.gz"
+PATCH_URI="0.18.3-no-undefined.patch"
+
+PKG_NAMES="${PN}0 ${PN}-devel"
+libnxml0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
+libnxml_devel_CONTENTS="usr/include/ usr/lib/"
